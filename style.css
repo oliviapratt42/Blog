@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .main{
@@ -8,7 +9,7 @@
     background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(NYC.jpg);
     background-position: center;
     background-size: cover;
-    height: 109vh;
+    height: 10vh;
 
 }
 
@@ -16,18 +17,155 @@
     width: 1200px;
     height: 75px;
     margin: auto;
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between items */
+
 }
 .icon{
-    width: 200px;
-    float: left;
     height: 70px
 }
 
 .logo{
-    color: #ff7200;
+    color: #000;
     font-size: 35px;
     font-family: Arial;
     padding-left: 20px;
-    float: left;
-    padding-top: 10px;
+    margin-top: 5%;
+}
+
+.menu{
+    margin-top: 3%;
+    height: 70px;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ff7200;
+}
+
+.search{
+    display: flex; /* Use flex for alignment */
+    align-items: center;
+
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float:left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-right: none;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+/* Main Container Styling */
+.container {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    border: 2px solid #000; /* Optional: add a border for visibility */
+    padding: 20px;
+}
+
+/* Article Styling */
+.article {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.article:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styling */
+.article-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Date Styling */
+.date {
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Title Styling */
+.title {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.title:hover {
+    color: #0000ff;
+}
+
+/* Blurb Styling */
+.blurb {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
 }
