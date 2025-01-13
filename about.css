@@ -29,7 +29,7 @@
 .logo{
     color: #000;
     font-size: 35px;
-    font-family: Oswald;
+    font-family: 'Oswald';
     padding-left: 20px;
     margin-top: 5%;
 }
@@ -54,7 +54,7 @@ ul li{
 ul li a{
     text-decoration: none;
     color: #fff;
-    font-family: Arial;
+    font-family: 'Noto Sans';
     font-weight: bold;
     transition: 0.4s ease-in-out;
 }
@@ -107,81 +107,20 @@ ul li a:hover{
     outline: none;
 }
 
-/* Main Container Styling */
-.container {
+.title{
+    font-size: 25px;
+    padding: 25px;
+    color: #000;
+}
+
+.blurb{
+    font-family: 'Noto Sans';
+    padding-left: 75px;
+}
+
+.container{
     display: block;
     width: 80%;
     margin: 20px auto;
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    border: 2px solid #000; /* Optional: add a border for visibility */
-    padding: 20px;
-    text-decoration: none;
-}
-
-/* Article Styling */
-.article {
-    margin-bottom: 20px;
-    padding: 20px;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    text-decoration: none;
-}
-
-.article:hover {
-    transform: scale(1.02);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Header Styling */
-.article-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-
-}
-.article-link a {
-    text-decoration: none; /* Remove underline for links inside articles */
-    color: inherit; /* Ensure links inherit the text color */
-}
-
-.article-link a:hover {
-    text-decoration: none; /* Prevent underline on hover */
-}
-
-
-/* Date Styling */
-.date {
-    color: #000000;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: right;
-    text-decoration: none;
-
-}
-
-/* Title Styling */
-.title {
-    color: #000;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: left;
-}
-
-.title:hover {
-    text-decoration: underline; /* Optional: underline only on hover for clarity */
-}
-
-/* Blurb Styling */
-.blurb {
-    color: #333;
-    font-size: 16px;
-    line-height: 1.6;
-    text-decoration: none;
-
+    border-left: 5px solid #ff7200;
 }
