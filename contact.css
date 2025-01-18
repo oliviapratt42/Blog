@@ -29,7 +29,7 @@
 .logo{
     color: #000;
     font-size: 35px;
-    font-family: Oswald;
+    font-family: 'Oswald';
     padding-left: 20px;
     margin-top: 5%;
 }
@@ -54,7 +54,7 @@ ul li{
 ul li a{
     text-decoration: none;
     color: #fff;
-    font-family: Arial;
+    font-family: 'Noto Sans';
     font-weight: bold;
     transition: 0.4s ease-in-out;
 }
@@ -107,69 +107,20 @@ ul li a:hover{
     outline: none;
 }
 
-/* Main Container Styling */
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    background-color: #f9f9f9;
+.title{
+    font-size: 25px;
+    padding: 25px;
+    color: #000;
 }
-/* Make the entire article clickable */
-.article-link {
-    text-decoration: none;
-    color: inherit;
-    width: 100%;
-    max-width: 600px;
+
+.blurb{
+    font-family: 'Noto Sans';
+    padding-left: 75px;
+}
+
+.container{
     display: block;
-}
-
-/* Style the article card */
-.article {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-/* Header styles */
-.article-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.5rem;
-}
-
-.title {
-    font-size: 1.25rem;
-    font-weight: bold;
-}
-
-.date {
-    font-size: 0.9rem;
-    color: #888;
-}
-
-/* Blurb text styles */
-.blurb {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #555;
-}
-
-/* Hover and focus effects */
-.article-link:hover .article,
-.article-link:focus .article {
-    transform: scale(1.03); /* Slight expansion */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    border-color: #aaa; /* Optional: make the border more prominent */
-}
-
-/* Responsive scaling */
-@media (max-width: 768px) {
-    .article {
-        padding: 0.75rem;
-    }
+    width: 80%;
+    margin: 20px auto;
+    border-left: 5px solid #ff7200;
 }
